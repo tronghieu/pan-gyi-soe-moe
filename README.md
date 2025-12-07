@@ -1,6 +1,6 @@
 # pan-gyi-soe-moe
 
-**pan-gyi-soe-moe** is a modern web application built with Next.js that serves as a comprehensive platform for showcasing and preserving Myanmar's cultural heritage, traditional events, historical artifacts, and portfolio items. Named after a traditional Myanmar percussion instrument, the project aims to bridge traditional Myanmar culture with modern technology. The platform focuses on providing an immersive digital experience that celebrates cultural diversity while following established engineering principles focusing on code quality, testing standards, user experience consistency, and performance requirements as outlined in our project constitution.
+**pan-gyi-soe-moe** is a modern personal website built with Next.js that showcases information about Myanmar's cultural heritage and personal portfolio items. Named after a traditional Myanmar percussion instrument, the project aims to bridge traditional Myanmar culture with modern technology. The website focuses on providing an elegant digital experience that celebrates cultural diversity while following good engineering practices focusing on code quality, user experience consistency, and performance.
 
 ## Technical Stack
 
@@ -13,10 +13,8 @@
 - **Architecture**: Server-Side Rendering (SSR) and Static Site Generation (SSG) capabilities
 - **UI Components**: Pre-designed components using industry-standard libraries
 - **State Management**: Client and server state management following Next.js 16 best practices
-- **API Layer**: Built-in API routes with RESTful services and JSON Web Token (JWT) authentication
-- **Database**: Integrated with modern databases (PostgreSQL/MySQL/MongoDB) with ORM/ODM support
-- **Testing**: Jest, React Testing Library, and Cypress for unit, integration, and end-to-end tests
-- **CI/CD**: Automated workflows with GitHub Actions for testing and deployment
+- **Testing**: Minimal testing with Jest for critical functionality
+- **CI/CD**: Simple deployment workflows
 - **Deployment**: Optimized for Vercel platform with edge caching and global CDN
 
 ## Project Principles
@@ -24,7 +22,7 @@
 This project adheres to the following core principles defined in our constitution:
 
 - **Code Quality Standards**: All code follows established style guides, passes linting, uses static analysis, maintains complexity metrics, and includes documentation for public interfaces
-- **Testing Standards**: TDD encouraged with minimum 80% test coverage, integration tests for critical paths
+- **Testing Standards**: Unit tests for critical functionality where needed
 - **User Experience Consistency**: Consistent UI/UX patterns, design system guidelines, WCAG 2.1 AA accessibility, responsive design
 - **Performance Requirements**: Page load times under 3 seconds, Core Web Vitals optimization, efficient bundle sizes
 - **Security and Privacy**: Secure coding practices, data protection compliance, input validation
@@ -96,11 +94,6 @@ In the project directory, you can run:
 - `npm run build` - Creates an optimized production build
 - `npm run start` - Starts the production server
 - `npm run lint` - Runs ESLint to check for code issues
-- `npm run test` - Runs unit and integration tests
-- `npm run test:watch` - Runs tests in watch mode
-- `npm run test:e2e` - Runs end-to-end tests
-- `npm run db:migrate` - Runs database migrations
-- `npm run db:seed` - Seeds the database with initial data
 
 ## Learn More
 
