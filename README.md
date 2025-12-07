@@ -110,6 +110,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## Project Templates
+
+This project includes several UI templates designed for showcasing cultural heritage and portfolio items:
+
+- **Home Page**: Main landing page with featured content
+- **About Page**: Artist/creator information section
+- **Portfolio**: Gallery view for showcasing artwork and projects
+- **Event Listings**: List of cultural events and exhibitions
+- **Event Detail**: Detailed view for specific events
+- **Artwork Insight**: Detailed view for individual artworks
+
 ## Contributing
 
 We welcome contributions to this project. Please read our [project constitution](./.specify/memory/constitution.md) to understand our engineering principles and development guidelines before submitting pull requests.

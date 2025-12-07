@@ -87,6 +87,17 @@ This personal website follows these core principles:
 - **Performance**: Page load times under 3 seconds, optimized Core Web Vitals, and efficient bundle sizes
 - **Security**: Basic security practices for static content
 
+## Project Templates
+
+This project includes several UI templates designed for showcasing cultural heritage and portfolio items:
+
+- **Home Page**: Main landing page with featured content
+- **About Page**: Artist/creator information section
+- **Portfolio**: Gallery view for showcasing artwork and projects
+- **Event Listings**: List of cultural events and exhibitions
+- **Event Detail**: Detailed view for specific events
+- **Artwork Insight**: Detailed view for individual artworks
+
 ## Environment & Configuration
 
 - TypeScript configured with ES2017 target and React JSX transformation
