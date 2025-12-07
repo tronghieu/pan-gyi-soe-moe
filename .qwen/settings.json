@@ -1,11 +1,15 @@
 {
   "model": {
-    "sessionTokenLimit": 256000
+    "sessionTokenLimit": 512000
   },
   "mcpServers": {
     "shadcn": {
       "command": "npx",
       "args": ["shadcn@latest", "mcp"]
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
     }
   },
   "$version": 2

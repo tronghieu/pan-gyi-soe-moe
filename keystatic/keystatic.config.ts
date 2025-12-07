@@ -1,145 +1,112 @@
-import { createConfig } from '@keystatic/core';
+import { config, collection, fields } from '@keystatic/core';
 
-export default createConfig({
+export default config({
   storage: {
     kind: 'local',
   },
   collections: {
     // Collection for managing articles about cultural heritage
-    articles: {
+    articles: collection({
       label: 'Articles',
-      path: 'content/articles',
+      slugField: 'title',
+      path: 'content/articles/*',
       format: { contentField: 'content' },
-      columns: ['title', 'date', 'author'],
-      entry: {
-        label: 'entry.title',
-      },
-      fields: {
-        title: {
-          label: 'Title',
-          description: 'The title of the article',
-          type: 'text',
-          validation: { isRequired: true },
-        },
-        date: {
+      schema: {
+        title: fields.slug({ name: { label: 'Title' } }),
+        date: fields.date({
           label: 'Date',
           description: 'The date of publication',
-          type: 'date',
           validation: { isRequired: true },
-        },
-        author: {
+        }),
+        author: fields.text({
           label: 'Author',
           description: 'The author of the article',
-          type: 'text',
           validation: { isRequired: true },
-        },
-        tags: {
-          label: 'Tags',
-          description: 'Tags for the article',
-          type: 'array',
-          element: {
-            type: 'text',
-          },
-          validation: { length: { min: 1 } },
-        },
-        content: {
+        }),
+        tags: fields.array(
+          fields.text({
+            label: 'Tag',
+            description: 'Tag for the article',
+          }),
+          {
+            label: 'Tags',
+            description: 'Tags for the article',
+            validation: { length: { min: 1 } },
+          }
+        ),
+        content: fields.markdoc({
           label: 'Content',
           description: 'The content of the article',
-          type: 'markdown',
-        },
+        }),
       },
-    },
+    }),
     // Collection for events related to cultural heritage
-    events: {
+    events: collection({
       label: 'Events',
-      path: 'content/events',
+      slugField: 'title',
+      path: 'content/events/*',
       format: { contentField: 'description' },
-      columns: ['title', 'date', 'location'],
-      entry: {
-        label: 'entry.title',
-      },
-      fields: {
-        title: {
-          label: 'Title',
-          description: 'The title of the event',
-          type: 'text',
-          validation: { isRequired: true },
-        },
-        date: {
+      schema: {
+        title: fields.slug({ name: { label: 'Title' } }),
+        date: fields.date({
           label: 'Date',
           description: 'The date of the event',
-          type: 'date',
           validation: { isRequired: true },
-        },
-        location: {
+        }),
+        location: fields.text({
           label: 'Location',
           description: 'The location of the event',
-          type: 'text',
           validation: { isRequired: true },
-        },
-        description: {
+        }),
+        description: fields.markdoc({
           label: 'Description',
           description: 'The description of the event',
-          type: 'markdown',
-        },
-        featured: {
+        }),
+        featured: fields.checkbox({
           label: 'Featured',
           description: 'Whether this event should be featured',
-          type: 'checkbox',
-        },
+        }),
       },
-    },
+    }),
     // Collection for artwork items
-    artwork: {
+    artwork: collection({
       label: 'Artwork',
-      path: 'content/artwork',
+      slugField: 'title',
+      path: 'content/artwork/*',
       format: { contentField: 'description' },
-      columns: ['title', 'date', 'medium'],
-      entry: {
-        label: 'entry.title',
-      },
-      fields: {
-        title: {
-          label: 'Title',
-          description: 'The title of the artwork',
-          type: 'text',
-          validation: { isRequired: true },
-        },
-        date: {
+      schema: {
+        title: fields.slug({ name: { label: 'Title' } }),
+        date: fields.date({
           label: 'Date',
           description: 'The date of creation',
-          type: 'date',
           validation: { isRequired: true },
-        },
-        medium: {
+        }),
+        medium: fields.text({
           label: 'Medium',
           description: 'The medium of the artwork',
-          type: 'text',
           validation: { isRequired: true },
-        },
-        description: {
+        }),
+        description: fields.markdoc({
           label: 'Description',
           description: 'The description of the artwork',
-          type: 'markdown',
-        },
-        featured: {
+        }),
+        featured: fields.checkbox({
           label: 'Featured',
           description: 'Whether this artwork should be featured',
-          type: 'checkbox',
-        },
+        }),
       },
-    },
+    }),
   },
   singletons: {
     // Singleton for the about page
     about: {
       label: 'About Page',
       path: 'content/about',
-      fields: {
-        title: { label: 'Title', type: 'text', validation: { isRequired: true } },
-        content: { label: 'Content', type: 'markdown' },
-        authorName: { label: 'Author Name', type: 'text', validation: { isRequired: true } },
-        authorBio: { label: 'Author Bio', type: 'markdown' },
+      schema: {
+        title: fields.text({ label: 'Title', validation: { isRequired: true } }),
+        content: fields.markdoc({ label: 'Content' }),
+        authorName: fields.text({ label: 'Author Name', validation: { isRequired: true } }),
+        authorBio: fields.markdoc({ label: 'Author Bio' }),
       },
     },
   },
