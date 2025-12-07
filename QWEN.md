@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a Next.js 16 application bootstrapped with `create-next-app`. The project follows the Next.js App Router pattern and is configured with modern development tools including TypeScript, Tailwind CSS, and ESLint. The application uses the Geist font family from Vercel and implements dark mode support.
+This is a Next.js 16 personal website bootstrapped with `create-next-app`. The project follows the Next.js App Router pattern and is configured with modern development tools including TypeScript, Tailwind CSS, and ESLint. The website uses the Geist font family from Vercel and implements dark mode support. Named after a traditional Myanmar percussion instrument, the project serves as a platform for showcasing information about Myanmar's cultural heritage and personal portfolio items.
 
 ## Project Structure
 
@@ -75,6 +75,17 @@ This is a Next.js 16 application bootstrapped with `create-next-app`. The projec
 - **Responsive Design**: Uses Tailwind CSS utility classes for responsive layouts
 - **Type Safety**: Full TypeScript support with React component typing
 - **Automatic Image Optimization**: Uses Next.js Image component with priority loading
+- **Minimal Testing**: Jest for critical functionality where needed
+
+## Project Principles
+
+This personal website follows these core principles:
+
+- **Code Quality**: Clean, maintainable code with proper TypeScript typing
+- **Testing Standards**: Unit tests for critical functionality where needed
+- **User Experience**: Consistent UI/UX patterns with responsive design and WCAG 2.1 AA accessibility
+- **Performance**: Page load times under 3 seconds, optimized Core Web Vitals, and efficient bundle sizes
+- **Security**: Basic security practices for static content
 
 ## Environment & Configuration
 
