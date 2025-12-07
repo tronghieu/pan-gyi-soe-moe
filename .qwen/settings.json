@@ -1,6 +1,6 @@
 {
   "model": {
-    "sessionTokenLimit": 32000
+    "sessionTokenLimit": 256000
   },
   "mcpServers": {
     "shadcn": {
