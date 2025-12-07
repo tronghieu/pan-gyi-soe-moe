@@ -106,6 +106,58 @@ export default config({
     }),
   },
   singletons: {
+    // Singleton for website-wide configuration
+    siteConfig: singleton({
+      label: "Website Configuration",
+      path: "content/site-config",
+      schema: {
+        siteName: fields.text({
+          label: "Website Name",
+          description: "The name of your website",
+          validation: { isRequired: true },
+        }),
+        siteDescription: fields.text({
+          label: "Website Description",
+          description: "A short description of your website",
+          validation: { isRequired: true },
+          multiline: true,
+        }),
+        siteUrl: fields.text({
+          label: "Website URL",
+          description: "The full URL of your website (e.g., https://example.com)",
+          validation: { isRequired: true },
+        }),
+        // SEO
+        seoTitle: fields.text({
+          label: "SEO Title",
+          description: "Default title for search engines (50-60 characters)",
+        }),
+        seoDescription: fields.text({
+          label: "SEO Description",
+          description: "Default meta description for search engines (150-160 characters)",
+          multiline: true,
+        }),
+        ogImage: fields.image({
+          label: "Default OG Image",
+          description: "Default Open Graph image for social sharing (1200x630px)",
+        }),
+        // Social
+        twitterHandle: fields.text({
+          label: "Twitter Handle",
+          description: "Twitter handle without @ (e.g., username)",
+        }),
+        // Additional
+        favicon: fields.image({
+          label: "Favicon",
+          description: "Website favicon",
+        }),
+        copyrightText: fields.text({
+          label: "Copyright Text",
+          description: "Copyright text for the website footer",
+          validation: { isRequired: true },
+        }),
+      },
+    }),
     // Singleton for the artist information
     artist: singleton({
       label: "Artist Information",
@@ -159,11 +211,6 @@ export default config({
             itemLabel: (props) => props.value || "Career Highlight",
           },
         ),
-        copyrightText: fields.text({
-          label: "Copyright Text",
-          description: "Text for the copyright footer",
-          validation: { isRequired: true },
-        }),
       },
     }),
   },
