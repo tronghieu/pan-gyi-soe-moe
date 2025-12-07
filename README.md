@@ -155,6 +155,10 @@ Keystatic runs as part of the Next.js application. The following content types a
 
 Content is stored locally by default. For production, you can configure different storage options in `keystatic/keystatic.config.ts`.
 
+## Content Format
+
+This project uses MarkDoc for content formatting. MarkDoc provides a powerful, flexible way to structure content with custom components while maintaining compatibility with standard Markdown syntax.
+
 ## Contributing
 
 We welcome contributions to this project. Please read our [project constitution](./.specify/memory/constitution.md) to understand our engineering principles and development guidelines before submitting pull requests.
