@@ -1,6 +1,8 @@
-import { makeRouteHandler } from '@keystatic/next/route-handler';
+import { createAPIRouteHandler } from '@keystatic/next/api-handler';
 import keystaticConfig from '../../keystatic/keystatic.config';
 
-export const { GET, POST } = makeRouteHandler({
+const handler = createAPIRouteHandler({
   config: keystaticConfig,
 });
+
+export { handler as GET, handler as POST };

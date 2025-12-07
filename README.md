@@ -140,14 +140,14 @@ For a full list of available components, visit [shadcn/ui documentation](https:/
 
 ## Content Management
 
-This project uses Keystatic as a headless CMS for managing content. You can access the admin panel at `/admin`.
+This project uses Keystatic as a headless CMS for managing content in Next.js 16. You can access the admin panel at `/admin`.
 
-To start the Keystatic development server:
+To start the development server:
 ```bash
-npm run keystatic
+npm run dev
 ```
 
-The following content types are configured:
+Keystatic runs as part of the Next.js application. The following content types are configured:
 - Articles
 - Events
 - Artwork
