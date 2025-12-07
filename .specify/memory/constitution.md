@@ -1,7 +1,7 @@
 <!-- SYNC IMPACT REPORT:
-Version change: N/A → 1.0.0 (Initial version)
-Modified principles: N/A
-Added sections: All principles (first implementation)
+Version change: 1.0.0 → 1.1.0 (Updated version)
+Modified principles: Testing Standards, Development Workflow, Quality Assurance
+Added sections: N/A
 Removed sections: N/A
 Templates requiring updates:
 - .specify/templates/plan-template.md: ✅ updated
@@ -20,7 +20,7 @@ Follow-up TODOs: None
 All code must adhere to established style guides and pass linting; Static analysis tools required; Code complexity metrics must be maintained below thresholds; Documentation required for all public interfaces.
 
 ### Testing Standards
-TDD encouraged where appropriate; All features must have unit tests with minimum 80% coverage; Integration tests required for critical paths; Tests must pass before merging.
+Unit tests for critical functionality where needed; Focus on manual testing for user-facing features; Automated tests only for complex logic or business-critical functions; Tests must pass before merging.
 
 ### User Experience Consistency
 Consistent UI/UX patterns across the application; Follow design system guidelines; Accessibility standards (WCAG 2.1 AA) required; Responsive design for all screen sizes.
@@ -33,14 +33,14 @@ Secure coding practices; Data protection compliance; Regular security audits; In
 
 ## Development Workflow
 
-PRs require review approval; Automated checks must pass; Semantic versioning; Feature flags for experimental features.
+Self-review of changes; Basic automated checks; Simple versioning; Deploy changes directly for personal website updates.
 
 ## Quality Assurance
 
-Code reviews mandatory; Automated testing pipeline; Performance monitoring; Bug tracking and resolution process.
+Code reviews mandatory; Manual testing for user-facing features; Performance monitoring; Bug tracking and resolution process.
 
 ## Governance
 
 Constitution supersedes other practices; Amendments require team consensus; Regular compliance reviews; Team responsible for enforcement.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
+**Version**: 1.1.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
