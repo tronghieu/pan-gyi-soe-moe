@@ -89,7 +89,7 @@ This personal website follows these core principles:
 
 ## Project Templates
 
-This project includes several UI templates designed for showcasing cultural heritage and portfolio items:
+This project includes several UI templates designed for showcasing cultural heritage and portfolio items. These templates are provided as standalone HTML files using Tailwind CSS. For the Next.js application, these will be converted to React components:
 
 - **Home Page**: Main landing page with featured content
 - **About Page**: Artist/creator information section
@@ -97,6 +97,10 @@ This project includes several UI templates designed for showcasing cultural heri
 - **Event Listings**: List of cultural events and exhibitions
 - **Event Detail**: Detailed view for specific events
 - **Artwork Insight**: Detailed view for individual artworks
+
+## UI Components
+
+The project currently uses Tailwind CSS for styling. shadcn/ui could be added for pre-built accessible components if needed in the future.
 
 ## Environment & Configuration
 
