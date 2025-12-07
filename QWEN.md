@@ -112,6 +112,18 @@ Additional components can be added using:
 npx shadcn@latest add [component-name]
 ```
 
+## Content Management
+
+This project uses Keystatic as a headless CMS for managing content. The admin panel is accessible at `/admin`.
+
+The following content types are configured:
+- Articles
+- Events
+- Artwork
+- About Page (singleton)
+
+Content is stored locally by default. For production, different storage options can be configured in `keystatic/keystatic.config.ts`.
+
 ## Environment & Configuration
 
 - TypeScript configured with ES2017 target and React JSX transformation

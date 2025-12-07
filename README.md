@@ -138,6 +138,23 @@ npx shadcn@latest add [component-name]
 
 For a full list of available components, visit [shadcn/ui documentation](https://ui.shadcn.com/docs/components).
 
+## Content Management
+
+This project uses Keystatic as a headless CMS for managing content. You can access the admin panel at `/admin`.
+
+To start the Keystatic development server:
+```bash
+npm run keystatic
+```
+
+The following content types are configured:
+- Articles
+- Events
+- Artwork
+- About Page (singleton)
+
+Content is stored locally by default. For production, you can configure different storage options in `keystatic/keystatic.config.ts`.
+
 ## Contributing
 
 We welcome contributions to this project. Please read our [project constitution](./.specify/memory/constitution.md) to understand our engineering principles and development guidelines before submitting pull requests.
