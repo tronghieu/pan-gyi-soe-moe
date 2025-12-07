@@ -100,7 +100,17 @@ This project includes several UI templates designed for showcasing cultural heri
 
 ## UI Components
 
-The project currently uses Tailwind CSS for styling. shadcn/ui could be added for pre-built accessible components if needed in the future.
+The project uses Tailwind CSS with shadcn/ui components for styling. The following components have been added:
+
+- Button
+- Card
+- Sheet
+- Dialog
+
+Additional components can be added using:
+```bash
+npx shadcn@latest add [component-name]
+```
 
 ## Environment & Configuration
 
