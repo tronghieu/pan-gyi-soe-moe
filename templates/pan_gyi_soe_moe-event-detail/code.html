@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Event Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Lora', serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eca413",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"],
+                        "body": ["Lora", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-[#E0E0E0]">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-10 py-4 font-display sticky top-0 z-10 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Elias Vance</h2>
+</div>
+<div class="flex flex-1 justify-end">
+<div class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Work</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Events</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">About</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center px-4 py-10 sm:px-10 lg:px-20">
+<div class="layout-content-container flex w-full max-w-4xl flex-col gap-8">
+<div class="flex flex-wrap gap-2 px-4">
+<a class="text-[#E0E0E0]/60 hover:text-primary transition-colors text-sm font-medium leading-normal flex items-center gap-1 font-display" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+                            Back to All Events
+                        </a>
+</div>
+<div class="relative @container w-full">
+<div class="w-full">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden min-h-[500px] rounded-xl" data-alt="An abstract, dark, and moody photograph from the 'Nocturne' exhibition." style='background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg608XYNrI4q8AyAHwvj7lPFBfhqnhpAY62xIs8Ep7o_A0mz-ElTZ4v1lQ_esVVkiPj0lAwt5EDEV4mNpG7OzBwzu3MLkTGBGp-rFFwm0DVyC8agE4VW4WUKGKEfsNA-9Q66X9L5ysZYFabqaD4_CK-8G07iBvYuK3mpXHTB_2DXGft0d1HGxlflJ7CsJKm_n4ZKsjvrT700WrN6houa0kt8PaLTKIpCWznmMFw52cE4n71FL5GFYM2ilD4caw-iYZgqaQRi-PmIk");'>
+<div class="flex p-8">
+<h1 class="text-white text-5xl md:text-7xl font-bold tracking-tight">Nocturne: An Evening Exhibition</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="border-y border-white/10">
+<div class="flex flex-col md:flex-row justify-between">
+<div class="flex-1 p-4 flex justify-between gap-x-6 border-b md:border-b-0 md:border-r border-white/10">
+<p class="text-[#E0E0E0]/60 text-base font-normal leading-normal">Date</p>
+<p class="text-white text-base font-medium leading-normal text-right">October 26, 2024</p>
+</div>
+<div class="flex-1 p-4 flex justify-between gap-x-6 border-b md:border-b-0 md:border-r border-white/10">
+<p class="text-[#E0E0E0]/60 text-base font-normal leading-normal">Time</p>
+<p class="text-white text-base font-medium leading-normal text-right">8:00 PM - 11:00 PM EST</p>
+</div>
+<div class="flex-1 p-4 flex justify-between gap-x-6">
+<p class="text-[#E0E0E0]/60 text-base font-normal leading-normal">Location</p>
+<a class="text-white text-base font-medium leading-normal text-right hover:text-primary transition-colors" href="#">The Grand Gallery, New York</a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<div class="md:col-span-1">
+<h3 class="text-white text-2xl font-bold leading-tight">About the Event</h3>
+</div>
+<div class="md:col-span-2 flex flex-col gap-6 text-[#E0E0E0]/80 text-lg leading-relaxed">
+<p>
+                                "Nocturne" is a solo exhibition by Elias Vance, exploring the interplay of light and shadow in urban landscapes after dark. This collection of large-format photographs captures the silent narratives of the city at night, transforming mundane scenes into cinematic moments.
+                            </p>
+<p>
+                                The event will feature a curated selection of 20 prints, a live Q&amp;A session with the artist, and an opportunity to purchase limited edition copies of the exhibition book. Join us for an immersive experience into the nocturnal world.
+                            </p>
+<div class="pt-4">
+<a class="inline-block rounded-full bg-primary px-8 py-3 text-sm font-bold text-background-dark transition-transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background-dark font-display" href="#">
+                                    Get Tickets
+                                </a>
+</div>
+</div>
+</div>
+<div class="px-4">
+<div class="border-t border-white/10 pt-8">
+<h3 class="text-white text-2xl font-bold leading-tight pb-6">Gallery</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="overflow-hidden rounded-lg aspect-square">
+<img class="h-full w-full object-cover transition-transform hover:scale-105" data-alt="A moody, neon-lit city street at night, reflecting on wet pavement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvbu2tOUbRbaZB3RHUWDFCCM5Q157MyAKwNZReF18qKxcaZaeqeoFyHf-509whJZNNhkx349KsING6hUtHZ6--SrsAzNNZs-qwnpvisRryz7pVJTcA7nQeVEDfzTFaaN9GzSscqWWi3RERxbqrdFEPpWgpskE4sSHNE2SQOalVVc1GVHGuvNhYdtoGBL6_spw_Ch2SBhvYBG2jYtzDk6GQfPPauiVbenVQTgTyT7FizporbUNDqfLZCryqVNTNOR5md5vN4di_y3s"/>
+</div>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img class="h-full w-full object-cover transition-transform hover:scale-105" data-alt="A silhouetted figure standing in a foggy alleyway illuminated by a single streetlamp." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrx3KAHY_x2JRPJJun5z-buUmCUouq_wDrb1LMT4kzsXYVY-exhab0MtPLBNdxXVvaJ9WSGD0EXMouDfDnJTdy_9IedNbSb5jq8l8loD2P6nX5fcYA4Xpxu9zxQ_DdtvJtEO6vdey8yaVPA3XRcWTVonhoFlpNJLru1bkGhfhJULZF8n_oOQ0Sq4071Lm0jUkJ23ply6BZpq5zUSYFrsa6k6fqswD-rCtBD2rtTN2G6qgaai4M41RtjW_Kg4zsmLvYEr8nhQM-0ME"/>
+</div>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img class="h-full w-full object-cover transition-transform hover:scale-105" data-alt="Close-up of a rain-streaked window looking out onto blurry city lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfzIdP6bGR8htL2h7DpsUD1DRMxxIACL1hWJHUN6lLWPeL0N1KXd6nhYUec91OJVm4xTH0fsUHXPi2iJ3o6rUJXfZkzEW5ug-RF-tZ-LtKOU82jGoL14V_fwD2ptJEs6D0fvm74TrFsHey4MgGrnwhmZ5-GSIAd-aO-11AlKhynXtw7DEGnC77NWFfv3fbKdch1AWM9uzYPAfIWQ6H2oaWH_HJhtG5jq0_x0mFg2i439Xvq69-TkjI4qJn4YKUKjCic-xPU4tlK-8"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

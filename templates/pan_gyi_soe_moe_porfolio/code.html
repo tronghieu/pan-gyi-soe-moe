@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Art Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#eca413",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221c10",
+            },
+            fontFamily: {
+              "display": ["Lora", "serif"],
+              "sans": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="flex h-full grow flex-col">
+<div class="flex flex-1 justify-center px-4 sm:px-8 lg:px-10 py-5">
+<div class="flex w-full max-w-6xl flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 py-4 sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-zinc-800 dark:text-white">
+<span class="material-symbols-outlined text-primary text-2xl">palette</span>
+<h2 class="text-zinc-800 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] font-sans">Elias Art</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center items-center gap-9 font-sans">
+<a class="text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Work</a>
+<a class="text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">About</a>
+<a class="text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-zinc-200 dark:bg-white/10 text-zinc-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0">
+<span class="material-symbols-outlined">search</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Profile picture of the artist" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6phJ9y53ldcSdlur4LUEdGwT15kic8FEHIYuic8n0Agm-INxdXdDezP96SM2vS_61PPn3H7yG9dWaizDBoJRJ1ujKTEehYvBP-7GqWNRo4-nCR9Iu-LRie7kOiHRNreTf15h8ap-8amUrVfukPkWowxU_7KIRIjFQnBB9-VkO3T4CY19augrPBYqXNyrtwG70aJJ28SAxnO3gNtRB6yiQhmm-LeVfiHi7AejuP40A8Q1lGEp8ZczvAW1o4Q1JTAn55urVGwZBR3Y");'></div>
+</div>
+</header>
+<main class="flex flex-col gap-8 md:gap-12 mt-8 md:mt-12">
+<div class="flex flex-wrap justify-between gap-4 p-4">
+<div class="flex min-w-72 flex-col gap-2">
+<h1 class="text-zinc-900 dark:text-white text-5xl sm:text-6xl font-medium leading-tight tracking-[-0.033em]">Portfolio</h1>
+<p class="text-zinc-500 dark:text-zinc-400 text-lg font-normal leading-normal font-sans">A curated collection of my selected works.</p>
+</div>
+</div>
+<div class="flex gap-3 px-4 overflow-x-auto pb-2 font-sans">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white pl-4 pr-4">
+<p class="text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-zinc-200 hover:bg-zinc-300 dark:bg-white/10 dark:hover:bg-white/20 pl-4 pr-4 transition-colors">
+<p class="text-zinc-800 dark:text-white text-sm font-medium leading-normal">Paintings</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-zinc-200 hover:bg-zinc-300 dark:bg-white/10 dark:hover:bg-white/20 pl-4 pr-4 transition-colors">
+<p class="text-zinc-800 dark:text-white text-sm font-medium leading-normal">Sculptures</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-zinc-200 hover:bg-zinc-300 dark:bg-white/10 dark:hover:bg-white/20 pl-4 pr-4 transition-colors">
+<p class="text-zinc-800 dark:text-white text-sm font-medium leading-normal">Digital</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-zinc-200 hover:bg-zinc-300 dark:bg-white/10 dark:hover:bg-white/20 pl-4 pr-4 transition-colors">
+<p class="text-zinc-800 dark:text-white text-sm font-medium leading-normal">Commissions</p>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+<a class="group relative block overflow-hidden rounded-lg aspect-[3/4]" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="Abstract painting with vibrant blue and yellow strokes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHJYTkGO38gMMim8AOT2WPOojr__K1-KO6iCQ5h7Cxc1naFmg9spZjnJTGG5NXN60i8WB8-yUdPemnl6I6CAJyuu5AwP6yepcs5ck62UesbO2o3WMyxE5vmT56Ez5XPcU7r3vl63Ase4p-zZWeNjtrjoxxlk3kldFa1wQRY3oDhN9rVmU85O_Af9f0cttNWoZK1MDuRDFKEJEjVFkfvIsSLXyYyM7u0zIUbi1ETncCMfayuXAPCDJ5XcLvJ6fUFaiSi_QxDJBpbu0");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Azure Dreamscape</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2023</p>
+</div>
+</a>
+<a class="group relative block overflow-hidden rounded-lg md:col-span-1 md:row-span-2 aspect-auto" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="Tall metallic sculpture with geometric shapes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC29NR2dBb35EzBF7ToxZZctlmo5Ouq8riFP7f7_lj0jH05GUpAlh4hSgpV3ieg1mdtaPNRuxXXHAUhFDC-NBuQGdCNiOqR4eSK9Z7O-P-3f4QCsiK-DvYo0AXfKXA5yFzBsApKyh27eXd_jDuv3OCHgqwTemShClocVg5WGGvGPt6AivSbtFrX07sI2r9-mf__zSjOCFr2kwgtvkPgm0p_fqWdBYAakVkKjGcyzpb7Pp9x5g7AvExhmME5wehuf3p6Svb6mPb_bL0");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Ascension</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2022</p>
+</div>
+</a>
+<a class="group relative block overflow-hidden rounded-lg aspect-[3/4]" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="Digital art of a neon-lit futuristic city" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGFowS8Py22nBYrioV-YTKNF-S539kEEbJr304w2NEuWGvrJ0Qd3cUj4HbjYdcpNVnDm81nArQ0fxxWwPZjhSHcRaBAKqqPLMUtWJe4c7_ll_kcgpOIcko1MYXeXIoJKesqvAdlIeWF8VXViGwnB_ulJ8tJt2FlimkfXRBowkGAQomerELQuzyOrmMiiSDGSTdZxd_0xNsgOrByRQBJ5O0srbNZG44AEExlPWk7558jV_NYhkwp6nxpIVLGJ_3ONUdnRIUatCaxfY");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Cybernetic Pulse</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2024</p>
+</div>
+</a>
+<a class="group relative block overflow-hidden rounded-lg aspect-[3/4]" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="Oil painting of a serene landscape with a lake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnd073H_7xo3qwLYKZ_gL1Vtsf7yPTPhe45nY9A7qExQHowoXSK4yvR6JFu5rcoBsG7ZAimQrL7-b6VvVZmDmSfslca2jocR5rvk9XdOGD1sx9mpA_WmeAZlEzX2zvSGnbgnghZtp8zODZM_8aKjrHZxoBf69y95qEbLxGdTXR37bmSg2bz9E7P4iVtTPI7DUHMlO900Yll1rBJo7LaYUjoATSY9DO0DYGuFppbHuW3Ov9gYeBJ4341ioNu0zJSNpwIdAhiJsCVoQ");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Still Waters</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2021</p>
+</div>
+</a>
+<a class="group relative block overflow-hidden rounded-lg aspect-[3/4]" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="A portrait painted with thick, textured brushstrokes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCiwIxaoraS6zHWXhKAn3ePGcURP5wE8fhaiTzD9cr2xaFHhvVpVa3UXGf9J2Pv85M-DyOqDezBealEqswaJZRf-RqicViBP-BVLb7nvMC_tlhsB-ocaAK0DMMN_0Ccj5V-EITwEKR485cdQcFfpYZ510Z9ZZUCdWh-stM5ESaWSij2Zqk7ed4SDJQHBJhxTmAn-vXj18cShTokrP1DBDDdtpZzEEBBKyWS1XYl9E6bP_sL4MG2Q7hplxfPGOeBNLp8CL8kH8icBs");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Ephemeral Gaze</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2023</p>
+</div>
+</a>
+<a class="group relative block overflow-hidden rounded-lg aspect-[3/4]" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="Close-up of a bronze sculpture's hand" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAae5L8XbKttHee6kQPzfeUqwc7EUaq9at6HwzexqrK5s71dn9IRiIkqLmjX5CgaCy77Bl1Ci_BgrJASwVkzsASXDHXXQ1w6caGJK2yJHuJ8SKBaizR-WUPJ3tYZDvPOS8ArKaV8kBs7e2KcdtiRk4f4j5jVvyOqFtA81duSIMHh3CVUFopsVpHJvD9ciPj4sq-FqkHuD0J17KvEfYkXSwbjc1Dm3F9nIettuTI6KyUNjeECKR1xIJV87hFVpcxekrVoTJoRq2kMIA");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">The Creator</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2020</p>
+</div>
+</a>
+<a class="group relative block overflow-hidden rounded-lg aspect-[3/4]" href="#">
+<div class="bg-cover bg-center absolute inset-0 transition-transform duration-300 group-hover:scale-105" data-alt="Red and black abstract fluid art" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApddJu0mC6qla5Zo-35sLCsuJJ4dacCylzeO1b6dC60ULnmbUS9Fq1UMANCGynPMwgIguMJxaPf5CwE1GGhTJZ5on-Inpq4E1WkfMS-1mUQftaNZCCQR-yVTRGYx6B49dcow_-_Ip5LwC78CHP-2tY_5VIKlTbO-8q_z8qJTQxM6Aazm-_-bxf92QzShwFiJv95YvSGKiSVkGLL5wWqzEh333JlEt1-ilw8evjG23X6oLMXcTOy9GephyQ8ikO3BXbEpwKgdqcApc");'></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-lg font-semibold leading-tight w-full line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Volcanic Flow</h3>
+<p class="text-white/80 text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75 font-sans">2022</p>
+</div>
+</a>
+</div>
+</main>
+<footer class="flex flex-col gap-6 px-5 py-10 text-center mt-12 border-t border-zinc-200 dark:border-white/10 font-sans">
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg class="feather feather-instagram" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg class="feather feather-twitter" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg class="feather feather-dribbble" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
+</a>
+</div>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">© 2024 Elias Art. All Rights Reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

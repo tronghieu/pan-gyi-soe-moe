@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Event Listings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#eca413",
+              "background-light": "#f8f7f6",
+              "background-dark": "#181611",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"],
+              "body": ["Lora", "serif"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:px-10 lg:px-20 xl:px-40">
+<div class="layout-content-container flex w-full max-w-7xl flex-1 flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 py-3 md:px-10">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Artist Name</h2>
+</div>
+<nav class="flex flex-1 justify-end gap-8">
+<div class="hidden items-center gap-9 md:flex">
+<a class="text-white/80 text-sm font-medium leading-normal transition-colors hover:text-white" href="#">Portfolio</a>
+<a class="text-white/80 text-sm font-medium leading-normal transition-colors hover:text-white" href="#">About</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Events</a>
+<a class="text-white/80 text-sm font-medium leading-normal transition-colors hover:text-white" href="#">Contact</a>
+</div>
+<button class="flex items-center justify-center p-2 md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="flex flex-1 flex-col px-4 py-10 md:px-10">
+<div class="flex flex-wrap items-baseline justify-between gap-4 pb-8">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Events &amp; Exhibitions</h1>
+</div>
+<div class="grid flex-1 grid-cols-1 gap-12 md:grid-cols-2 md:gap-8 lg:gap-16">
+<section class="flex flex-col">
+<h2 class="font-body text-white text-2xl font-semibold leading-tight pb-5 pt-5 border-b border-white/10 mb-5">Upcoming Events</h2>
+<div class="flex flex-col gap-8 font-body">
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white text-xl font-bold leading-tight">Solo Exhibition: 'Horizons'</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d] text-lg font-normal leading-relaxed">Oct 15 - Nov 30, 2024 • Modern Art Gallery, New York</p>
+<p class="text-[#b9b09d] text-base font-normal leading-relaxed">A solo exhibition showcasing recent works exploring the theme of horizons.</p>
+</div>
+<div class="pt-2">
+<a class="font-display flex min-w-[84px] max-w-max cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-[#181611] text-sm font-medium leading-normal transition-opacity hover:opacity-90" href="#">
+<span class="truncate">Learn More</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white text-xl font-bold leading-tight">Workshop: Abstract Techniques</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d] text-lg font-normal leading-relaxed">Nov 5, 2024 • Artist's Studio, Online</p>
+<p class="text-[#b9b09d] text-base font-normal leading-relaxed">Join a virtual workshop to learn unique abstract painting techniques.</p>
+</div>
+<div class="pt-2">
+<a class="font-display flex min-w-[84px] max-w-max cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-[#181611] text-sm font-medium leading-normal transition-opacity hover:opacity-90" href="#">
+<span class="truncate">Register Now</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white text-xl font-bold leading-tight">Art Fair: 'Contemporary Visions'</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d] text-lg font-normal leading-relaxed">Dec 1-4, 2024 • Miami Beach Convention Center</p>
+<p class="text-[#b9b09d] text-base font-normal leading-relaxed">Presenting new large-scale works at Booth C12.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col">
+<h2 class="font-body text-white text-2xl font-semibold leading-tight pb-5 pt-5 border-b border-white/10 mb-5">Past Events</h2>
+<div class="flex flex-col gap-8 font-body">
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white/70 text-xl font-bold leading-tight">Group Show: 'Ethereal Forms'</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d]/70 text-lg font-normal leading-relaxed">Aug 2024 • Chroma Gallery, London</p>
+<p class="text-[#b9b09d]/70 text-base font-normal leading-relaxed">Featured in a group exhibition focused on modern sculpture.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white/70 text-xl font-bold leading-tight">Artist Talk &amp; Demo</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d]/70 text-lg font-normal leading-relaxed">May 2024 • Online Webinar</p>
+<p class="text-[#b9b09d]/70 text-base font-normal leading-relaxed">A live discussion on creative process and a painting demonstration.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white/70 text-xl font-bold leading-tight">Solo Exhibition: 'Penumbra'</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d]/70 text-lg font-normal leading-relaxed">Feb - Mar 2024 • Axis Gallery, Tokyo</p>
+<p class="text-[#b9b09d]/70 text-base font-normal leading-relaxed">An exploration of light and shadow through monochromatic paintings.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-lg transition-colors hover:bg-white/5">
+<div class="flex w-full flex-col items-stretch justify-center gap-2 py-4">
+<p class="text-white/70 text-xl font-bold leading-tight">Residency Showcase</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#b9b09d]/70 text-lg font-normal leading-relaxed">Nov 2023 • The Foundry, Berlin</p>
+<p class="text-[#b9b09d]/70 text-base font-normal leading-relaxed">Exhibition of works created during a three-month artist residency.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
