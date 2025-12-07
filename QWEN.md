@@ -114,7 +114,7 @@ npx shadcn@latest add [component-name]
 
 ## Content Management
 
-This project uses Keystatic as a headless CMS for managing content in Next.js 16. The admin panel is accessible at `/admin`.
+This project uses Keystatic as a headless CMS for managing content in Next.js 16. The admin panel is accessible at `/keystatic`.
 
 Keystatic runs as part of the Next.js application. The following content types are configured:
 - Articles
