@@ -8,7 +8,7 @@ export default config({
         }
       : {
           kind: "github",
-          repo: "tronghieu/pan-gyi-soe-meo",
+          repo: "tronghieu/pan-gyi-soe-moe",
         },
   collections: {
     // Collection for managing articles about cultural heritage
