@@ -1,9 +1,15 @@
 import { config, collection, singleton, fields } from "@keystatic/core";
 
 export default config({
-  storage: {
-    kind: "local",
-  },
+  storage:
+    process.env.NODE_ENV === "development"
+      ? {
+          kind: "local",
+        }
+      : {
+          kind: "github",
+          repo: "tronghieu/pan-gyi-soe-meo",
+        },
   collections: {
     // Collection for managing articles about cultural heritage
     articles: collection({
@@ -124,7 +130,8 @@ export default config({
         }),
         siteUrl: fields.text({
           label: "Website URL",
-          description: "The full URL of your website (e.g., https://example.com)",
+          description:
+            "The full URL of your website (e.g., https://example.com)",
           validation: { isRequired: true },
         }),
         // SEO
@@ -134,12 +141,14 @@ export default config({
         }),
         seoDescription: fields.text({
           label: "SEO Description",
-          description: "Default meta description for search engines (150-160 characters)",
+          description:
+            "Default meta description for search engines (150-160 characters)",
           multiline: true,
         }),
         ogImage: fields.image({
           label: "Default OG Image",
-          description: "Default Open Graph image for social sharing (1200x630px)",
+          description:
+            "Default Open Graph image for social sharing (1200x630px)",
         }),
         // Social
         twitterHandle: fields.text({
